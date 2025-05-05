@@ -1,13 +1,13 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, desktopCapturer } = require('electron');
 
 let mainWindow;
 
 app.on('ready', () => {
     mainWindow = new BrowserWindow({
         width: 600, // Match the container's max-width
-        height: 400, // Adjust height to match the container's content
+        height: 600, // Adjust height to match the container's content
         frame: false, // Removes the title bar
-        resizable: true, // Prevent resizing
+        resizable: false, // Prevent resizing
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -20,3 +20,8 @@ app.on('ready', () => {
         mainWindow.close();
     })
 });
+
+ipcMain.handle('capture-screen', async () => {
+    const sources = await desktopCapturer.getSources({ types: ['screen'] });
+    return sources;
+})
