@@ -108,4 +108,3 @@ We welcome contributions! If you'd like to contribute:
 - [Electron](https://www.electronjs.org/) for providing the framework.
 - [ColourLovers](http://www.colourlovers.com/) for the color palette API.
 
-enjoy the app 
