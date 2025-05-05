@@ -70,5 +70,42 @@ If you'd like to package the widget as a standalone application for distribution
    ```
 
 2. **Package the Application**:
+   Run the following command to package the app:
+   ```bash
+   electron-packager . ColorPickerWidget --platform=win32 --arch=x64 --out=dist --overwrite
+   ```
+   - Replace `win32` with your platform (`darwin` for macOS, `linux` for Linux).
+   - The packaged app will be available in the `dist` folder.
+
+3. **Run the Packaged App**:
+   Navigate to the `dist` folder and run the executable file.
+
+---
+
+## Troubleshooting
+### Common Issues
+1. **`npm start` Fails**:
+   - Ensure you have Node.js and npm installed.
+   - Verify that you are in the correct project directory.
+
+2. **Large File Error When Pushing to GitHub**:
+   - Ensure `node_modules` is excluded from the repository by adding it to `.gitignore`.
+
+3. **Widget Doesn't Close**:
+   - Ensure the close button is properly wired to the Electron `window.close()` function.
+
+---
+
+## Contributing
+We welcome contributions! If you'd like to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a detailed description of your changes.
+
+---
+
+## Acknowledgments
+- [Electron](https://www.electronjs.org/) for providing the framework.
+- [ColourLovers](http://www.colourlovers.com/) for the color palette API.
 
 
