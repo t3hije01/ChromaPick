@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Colorpicker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="drag-area"></div>
+        <button class="close-btn">X</button>
+        <h1>Colorpicker</h1>
+        <input type="color" id="colorPicker">
+        <div class="color-box" id="colorBox"></div>
+        <p>HEX: <span id="hexVal">#ffffff</span></p>
+        <button onclick="loadPopularPalettes()">See popular colorthemes and palettes</button>
+
+        <div id="palettes"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
