@@ -62,5 +62,3 @@ box.addEventListener('click', () => {
     })
 })
 
-
-

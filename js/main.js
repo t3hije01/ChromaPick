@@ -20,8 +20,3 @@ app.on('ready', () => {
         mainWindow.close();
     })
 });
-
-ipcMain.handle('capture-screen', async () => {
-    const sources = await desktopCapturer.getSources({ types: ['screen'] });
-    return sources;
-})
