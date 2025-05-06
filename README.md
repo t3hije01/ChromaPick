@@ -77,28 +77,6 @@ Before you begin, ensure you have the following installed on your system:
 
 ---
 
-## Packaging the Widget (Optional)
-If you'd like to package the widget as a standalone application for distribution, follow these steps:
-
-1. **Install Electron Packager**:
-   Install the `electron-packager` globally:
-   ```bash
-   npm install -g electron-packager
-   ```
-
-2. **Package the Application**:
-   Run the following command to package the app:
-   ```bash
-   electron-packager . ChromaPick --platform=win32 --arch=x64 --out=dist --overwrite
-   ```
-   - Replace `win32` with your platform (`darwin` for macOS, `linux` for Linux).
-   - The packaged app will be available in the `dist` folder.
-
-3. **Run the Packaged App**:
-   Navigate to the `dist` folder and run the executable file.
-
----
-
 ## Acknowledgments
 - [Electron](https://www.electronjs.org/) for providing the framework.
 - [ColourLovers](http://www.colourlovers.com/) for the color palette API.
