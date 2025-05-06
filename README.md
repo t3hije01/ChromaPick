@@ -89,7 +89,7 @@ If you'd like to package the widget as a standalone application for distribution
 2. **Package the Application**:
    Run the following command to package the app:
    ```bash
-   electron-packager . ColorPickerWidget --platform=win32 --arch=x64 --out=dist --overwrite
+   electron-packager . ChromaPick --platform=win32 --arch=x64 --out=dist --overwrite
    ```
    - Replace `win32` with your platform (`darwin` for macOS, `linux` for Linux).
    - The packaged app will be available in the `dist` folder.
