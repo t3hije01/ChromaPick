@@ -1,14 +1,15 @@
 # ChromaPick (Color Picker Widget)
 
-**ChromaPick** is a lightweight and user-friendly application built with Electron. It allows users to pick colors, view their HEX values, and explore popular color palettes. This widget is perfect for designers, developers, and anyone working with colors.
+**ChromaPick** is a lightweight and user-friendly application built with Electron. It allows users to pick colors, view their HEX values, explore popular color palettes, toggle between light and dark modes, and save the last 10 used colors. This widget is perfect for designers, developers, and anyone working with colors.
 
 ---
 
 ## Features
 - **Color Picker**: Select colors and instantly view their HEX values.
 - **Popular Palettes**: Browse popular color palettes fetched from ColourLovers.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Clipboard Copy**: Copy the selected color's HEX value to the clipboard.
 - **Customizable**: Easily modify the widget to suit your needs.
-- **Lightweight**: Minimal design with a focus on functionality.
 
 ---
 
@@ -16,10 +17,13 @@
 
 ### Prerequisites
 Before you begin, ensure you have the following installed on your system:
-- [Node.js](https://nodejs.org/) (v14 or later)
+- [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
 
-### Steps to Download and Run the Widget
+---
+
+### Steps to Initialize and Run the Widget Locally
+
 1. **Clone the Repository**:
    Open a terminal and run the following command to clone the repository:
    ```bash
@@ -38,10 +42,16 @@ Before you begin, ensure you have the following installed on your system:
    npm install
    ```
 
-4. **Start the Widget**:
+4. **Install Electron Locally**:
+   Install Electron as a local dependency:
+   ```bash
+   npm install electron
+   ```
+
+5. **Start the Widget**:
    Launch the widget with the following command:
    ```bash
-   npm start
+   npx electron .
    ```
 
 ---
@@ -52,10 +62,17 @@ Before you begin, ensure you have the following installed on your system:
    - The selected color will be displayed in the widget, along with its HEX value.
 
 2. **Explore Popular Palettes**:
+   - Click the "See popular colorthemes and palettes" button to fetch and display popular palettes.
    - Scroll through the list of popular color palettes fetched from ColourLovers.
    - Click on a color swatch to apply it to the color picker.
 
-3. **Close the Widget**:
+3. **Toggle Dark Mode**:
+   - Click the "Toggle Dark Mode" button to switch between light and dark themes.
+
+5. **Copy HEX Value**:
+   - Click on the color box to copy the HEX value to the clipboard.
+
+6. **Close the Widget**:
    - Click the "X" button in the top-right corner to close the widget.
 
 ---
@@ -79,28 +96,6 @@ If you'd like to package the widget as a standalone application for distribution
 
 3. **Run the Packaged App**:
    Navigate to the `dist` folder and run the executable file.
-
----
-
-## Troubleshooting
-### Common Issues
-1. **`npm start` Fails**:
-   - Ensure you have Node.js and npm installed.
-   - Verify that you are in the correct project directory.
-
-2. **Large File Error When Pushing to GitHub**:
-   - Ensure `node_modules` is excluded from the repository by adding it to `.gitignore`.
-
-3. **Widget Doesn't Close**:
-   - Ensure the close button is properly wired to the Electron `window.close()` function.
-
----
-
-## Contributing
-We welcome contributions! If you'd like to contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with a detailed description of your changes.
 
 ---
 
