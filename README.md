@@ -1,6 +1,6 @@
 # ChromaPick (Color Picker Widget)
 
-**ChromaPick** is a lightweight and user-friendly application built with Electron. It allows users to pick colors, view their HEX values, explore popular color palettes, toggle between light and dark modes, and save the last 10 used colors. This widget is perfect for designers, developers, and anyone working with colors.
+**ChromaPick** is a lightweight and user-friendly application built with Electron. It allows users to pick colors, view their HEX values, explore popular color palettes and toggle between light and dark modes This widget is perfect for designers, developers, and anyone working with colors.
 
 ---
 
